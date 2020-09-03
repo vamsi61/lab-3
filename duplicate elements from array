@@ -1,0 +1,15 @@
+
+#delete the duplicate elements from an array
+def Remove(arr):
+    final = []
+    for num in arr:
+        if num not in final:
+            final.append(num)
+    return final
+arr = [6,10,6,8,9]
+print(arr)
+print(Remove(arr))
+
+output:
+[6, 10, 6, 8, 9,15]
+[6, 10, 8, 9]
