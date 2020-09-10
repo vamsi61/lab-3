@@ -1,0 +1,37 @@
+r = int(input("Enter the number of rows:"))
+C = int(input("Enter the number of columns:"))
+matrix = []
+for i in range(R):
+    a = []
+    for j in range(C):
+        a.append(int(input()))
+    matrix.append(a)
+
+
+thresh=1
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        if matrix[i][j]<thresh+1:
+            matrix[i][j]=0
+smatrixx=[]
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        if matrix[i][j] != 0:
+            temp = [i, j, matrix[i][j]]
+            smatrixx.append(temp)
+print(smatrixx)
+
+runfile('C:/Users/vamsi/OneDrive/Desktop/python/untitled7.py', wdir='C:/Users/vamsi/OneDrive/Desktop/python')
+
+Enter the number of rows:2
+
+Enter the number of columns:2
+
+12
+
+02
+
+40
+
+07
+[[0, 0, 12], [0, 1, 2], [1, 0, 40], [1, 1, 7]]
