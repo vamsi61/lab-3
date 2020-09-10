@@ -1,0 +1,13 @@
+array= list(map(int, input("enter by giving space:").strip().split(' ')))
+array2= list(map(int, input("enter by giving space:").strip().split(' ')))
+array2+=array
+print(array2)
+
+
+
+runfile('C:/Users/vamsi/OneDrive/Desktop/python/untitled4.py', wdir='C:/Users/vamsi/OneDrive/Desktop/python')
+
+enter by giving space:1 2 3 4
+
+enter by giving space:6 7 9
+[6, 7, 9, 1, 2, 3, 4]
